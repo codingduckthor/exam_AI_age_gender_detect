@@ -181,6 +181,34 @@ Frontend:
 ```
 http://localhost:5173
 ```
+```
+-- =========================
+-- USERS TABLE
+-- =========================
+
+CREATE TABLE public.users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR UNIQUE,
+    email VARCHAR UNIQUE,
+    password VARCHAR
+);
+
+-- =========================
+-- PREDICTIONS TABLE
+-- =========================
+
+CREATE TABLE public.predictions (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES public.users(id) ON DELETE CASCADE,
+    age VARCHAR,
+    gender VARCHAR,
+    age_confidence DOUBLE PRECISION,
+    gender_confidence DOUBLE PRECISION,
+    created_at TIMESTAMP
+);
+```
+
+
 <img width="1917" height="871" alt="Screenshot 2026-06-12 165734" src="https://github.com/user-attachments/assets/4ba087cf-dd89-40f4-97ee-fed7bef6e6ed" />
 
 <img width="1918" height="871" alt="Screenshot 2026-06-12 165715" src="https://github.com/user-attachments/assets/aafae7a1-17bf-48d1-ab77-7e4271eb16c6" />
