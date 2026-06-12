@@ -118,10 +118,10 @@ Request (multipart/form-data):
 
 ## 6. Установка и запуск
 1. Клонирование репозитория
-``
+```
 git clone https://github.com/your-repo.git
 cd project-root
-``
+```
 3. Backend
 ```
 cd backend
