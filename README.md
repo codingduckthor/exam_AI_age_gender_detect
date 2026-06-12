@@ -1,5 +1,5 @@
-AI Age & Gender Detection Project
-1. Описание проекта + функциональные возможности
+# AI Age & Gender Detection Project
+## 1. Описание проекта + функциональные возможности
 
 Проект представляет собой веб-приложение, использующее нейросетевую модель для определения возраста и пола человека по загруженному изображению.
 
@@ -14,7 +14,7 @@ AI Age & Gender Detection Project
 История запросов пользователя (если подключена БД)
 UI отображение результата в реальном времени
 
-2. Архитектура проекта
+## 2. Архитектура проекта
 
 Проект построен по клиент-серверной архитектуре:
 
@@ -29,36 +29,36 @@ ML Model (PyTorch / OpenCV pipeline)
 ```
 
 Поток данных:
-1) Пользователь загружает изображение
-2) Frontend отправляет POST /predict
-3) Backend:
-      декодирует изображение
-      прогоняет через модель
-      формирует результат
-4) Ответ возвращается на frontend
+        1) Пользователь загружает изображение
+        2) Frontend отправляет POST /predict
+        3) Backend:
+              декодирует изображение
+              прогоняет через модель
+              формирует результат
+        4) Ответ возвращается на frontend
 
-3. Использованные технологии
-Frontend:
-React (Vite)
-Axios (HTTP запросы)
-React Router DOM
-CSS / Flexbox / custom styling
-Backend:
-Python 3.10+
-FastAPI / Flask
-Uvicorn (ASGI server)
-SQLAlchemy (если используется БД)
-Pydantic (валидация данных)
-OpenCV / Pillow (обработка изображений)
-ML:
-PyTorch / TensorFlow
-NumPy
-Pretrained CNN модель для age/gender classification
-База данных (если есть):
-PostgreSQL
-Alembic (миграции)
+## 3. Использованные технологии
+        Frontend:
+        React (Vite)
+        Axios (HTTP запросы)
+        React Router DOM
+        CSS / Flexbox / custom styling
+        Backend:
+        Python 3.10+
+        FastAPI / Flask
+        Uvicorn (ASGI server)
+        SQLAlchemy (если используется БД)
+        Pydantic (валидация данных)
+        OpenCV / Pillow (обработка изображений)
+        ML:
+        PyTorch / TensorFlow
+        NumPy
+        Pretrained CNN модель для age/gender classification
+        База данных (если есть):
+        PostgreSQL
+        Alembic (миграции)
 
-4. Структура репозитория
+## 4. Структура репозитория
 
 ```
 project-root/
@@ -88,7 +88,7 @@ project-root/
 ├── README.md
 ```
 
-5. Модель данных + REST API
+## 5. Модель данных + REST API
 JSON пример:
 ```
 User {
@@ -116,15 +116,19 @@ POST /predict
 
 Request (multipart/form-data):
 
-6. Установка и запуск
+## 6. Установка и запуск
 1. Клонирование репозитория
+``
 git clone https://github.com/your-repo.git
 cd project-root
-2. Backend
+``
+3. Backend
+```
 cd backend
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
+```
 ```
 pip install -r requirements.txt
 ```
