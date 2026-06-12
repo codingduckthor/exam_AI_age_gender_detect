@@ -122,7 +122,7 @@ Request (multipart/form-data):
 git clone https://github.com/your-repo.git
 cd project-root
 ```
-3. Backend
+2. Backend
 ```
 cd backend
 python -m venv venv
@@ -142,7 +142,7 @@ Backend будет доступен:
 http://localhost:8000
 ```
 
-3. Frontend
+3. Frontend будет доступен:
 ```
 cd frontend
 npm install
