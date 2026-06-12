@@ -1,0 +1,84 @@
+.home-page {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.home-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.logout-btn {
+  border: none;
+
+  background: #ef4444;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 12px;
+}
+
+.upload-box {
+  background: #1e293b;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  margin-bottom: 30px;
+}
+
+.upload-input {
+  width: 100%;
+}
+
+.result-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+
+  border-radius: 20px;
+
+  padding: 20px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.preview-image {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+.face-card {
+  background: #0f172a;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  margin-top: 15px;
+}
+
+.face-card p {
+  margin-bottom: 8px;
+}
+
+.error {
+  color: #ef4444;
+  margin-top: 15px;
+}
