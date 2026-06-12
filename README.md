@@ -153,3 +153,8 @@ Frontend:
 ```
 http://localhost:5173
 ```
+<img width="1917" height="871" alt="Screenshot 2026-06-12 165734" src="https://github.com/user-attachments/assets/4ba087cf-dd89-40f4-97ee-fed7bef6e6ed" />
+
+<img width="1918" height="871" alt="Screenshot 2026-06-12 165715" src="https://github.com/user-attachments/assets/aafae7a1-17bf-48d1-ab77-7e4271eb16c6" />
+
+<img width="1918" height="868" alt="Screenshot 2026-06-12 165659" src="https://github.com/user-attachments/assets/d1caa7cd-4dba-4cbe-a0fe-a56a0e7c97f5" />
