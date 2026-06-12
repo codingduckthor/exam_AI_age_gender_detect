@@ -64,28 +64,56 @@ ML Model (PyTorch / OpenCV pipeline)
 project-root/
 │
 ├── backend/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── routes/
-│   │   ├── services/
-│   │   ├── models/
-│   │   ├── ml/
-│   │   └── database/
+│   ├── main.py
+│   ├── auth.py
+│   ├── model.py
+│   ├── deps.py
 │   ├── requirements.txt
-│   └── .env
+│   │
+│   ├── database/
+│   │   └── db.py
+│   │
+│   ├── models/
+│   │   ├── age_detector/
+│   │   ├── face_detector/
+│   │   └── gender_detector/
+│   │
+│   ├── routes/
+│   │   ├── auth_routes.py
+│   │   ├── history_routes.py
+│   │   └── predict_routes.py
+│   │
+│   ├── schemas/
+│   │   ├── prediction.py
+│   │   └── user.py
 │
 ├── frontend/
+│   ├── index.html
+│   ├── eslint_config.js
+│   ├── package.json
+│   ├── vite.config.js
+│   │
 │   ├── src/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.jsx
+│   │   ├── main.jsx
+│   │   ├── index.css
+│   │   │
 │   │   ├── components/
+│   │   │   ├── Header.jsx
+│   │   │   └── Header.css
+│   │   │
 │   │   ├── pages/
 │   │   │   ├── Home.jsx
+│   │   │   ├── Home.css
 │   │   │   ├── Login.jsx
-│   │   ├── services/
-│   │   └── App.jsx
-│   ├── package.json
-│   └── vite.config.js
-│
-├── README.md
+│   │   │   ├── Login.css
+│   │   │   ├── Register.jsx
+│   │   │   └── Register.css
+│   │   │
+│   │   └── styles/
+│   │       └── global.css
 ```
 
 ## 5. Модель данных + REST API
